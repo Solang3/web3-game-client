@@ -1,0 +1,13 @@
+<div>
+    <h2>Plant Care</h2>
+    <button (click)="waterPlant()">Water</button>
+    <button (click)="applyFertilizer()">Apply Fertilizer</button>
+    <button (click)="applyPesticide()">Apply Pesticide</button>
+    <button (click)="triggerRandomEvent()">Trigger Random Event</button>
+    <ul>
+      <li *ngFor="let event of events">
+        {{ event.timestamp }}: {{ event.message }}
+      </li>
+    </ul>
+</div>
+  

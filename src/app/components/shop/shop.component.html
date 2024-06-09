@@ -1,0 +1,10 @@
+<div>
+    <h2>Shop</h2>
+    <ul>
+        <li *ngFor="let item of items">
+        {{ item.name }} - {{ item.price }} ETH
+        <button (click)="buyItem(item.id, item.price)">Buy</button>
+        </li>
+    </ul>
+</div>
+  
